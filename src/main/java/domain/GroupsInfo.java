@@ -1,13 +1,14 @@
 package domain;
 
 public class GroupsInfo {
+
     private int id;
     private String name;
     private int isClosed;
     private int isAdmin;
     private int isMember;
     private String type;
-    private String photosInfo;
+    private GroupsInfo photosInfo;
 
     public int getId() {
         return id;
@@ -57,11 +58,11 @@ public class GroupsInfo {
         this.type = type;
     }
 
-    public String getPhotosInfo() {
+    public GroupsInfo getPhotosInfo() {
         return photosInfo;
     }
 
-    public void setPhotosInfo(String photosInfo) {
+    public void setPhotosInfo(GroupsInfo photosInfo) {
         this.photosInfo = photosInfo;
     }
 

@@ -1,12 +1,13 @@
 package domain;
 
 public class UsersInfo {
+
     private int id;
     private String firstName;
     private String lastName;
     private String deactivatedUser;
-    private String isClosedUser;
-    private String canAccessClosed;
+    private boolean isClosedUser;
+    private boolean canAccessClosed;
 
     public int getId() {
         return id;
@@ -40,20 +41,19 @@ public class UsersInfo {
         this.deactivatedUser = deactivatedUser;
     }
 
-    public String getIsClosedUser() {
+    public boolean isClosedUser() {
         return isClosedUser;
     }
 
-    public void setIsClosedUser(String isClosedUser) {
-        this.isClosedUser = isClosedUser;
+    public void setClosedUser(boolean closedUser) {
+        isClosedUser = closedUser;
     }
 
-    public String getCanAccessClosed() {
+    public boolean isCanAccessClosed() {
         return canAccessClosed;
     }
 
-    public void setCanAccessClosed(String canAccessClosed) {
+    public void setCanAccessClosed(boolean canAccessClosed) {
         this.canAccessClosed = canAccessClosed;
     }
-
 }

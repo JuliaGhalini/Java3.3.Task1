@@ -1,7 +1,6 @@
 package domain;
 
 public class Post {
-
     private int id;
     private int ownerId;
     private int fromId;
@@ -9,9 +8,9 @@ public class Post {
     private String text;
     private int signerId;
     private int createdBy;
-    private int likesInfo;
-    private int commentsInfo;
-    private int repostsInfo;
+    private Post likesInfo;
+    private Post commentsInfo;
+    private Post repostsInfo;
     private int replyOwnerId;
     private int replyPostId;
     private int  friendsOnly;
@@ -21,6 +20,7 @@ public class Post {
     private boolean isFavorite;
     private boolean canDelete;
     private boolean canEdit;
+
     public int getId() {
         return id;
     }
@@ -77,27 +77,27 @@ public class Post {
         this.createdBy = createdBy;
     }
 
-    public int getLikesInfo() {
+    public Post getLikesInfo() {
         return likesInfo;
     }
 
-    public void setLikesInfo(int likesInfo) {
+    public void setLikesInfo(Post likesInfo) {
         this.likesInfo = likesInfo;
     }
 
-    public int getCommentsInfo() {
+    public Post getCommentsInfo() {
         return commentsInfo;
     }
 
-    public void setCommentsInfo(int commentsInfo) {
+    public void setCommentsInfo(Post commentsInfo) {
         this.commentsInfo = commentsInfo;
     }
 
-    public int getRepostsInfo() {
+    public Post getRepostsInfo() {
         return repostsInfo;
     }
 
-    public void setRepostsInfo(int repostsInfo) {
+    public void setRepostsInfo(Post repostsInfo) {
         this.repostsInfo = repostsInfo;
     }
 
@@ -172,5 +172,8 @@ public class Post {
     public void setCanEdit(boolean canEdit) {
         this.canEdit = canEdit;
     }
+
+
+
 
 }

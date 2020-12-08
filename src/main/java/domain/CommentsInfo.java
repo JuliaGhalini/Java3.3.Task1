@@ -5,7 +5,7 @@ public class CommentsInfo {
     private int fromId;
     private int date;
     private int text;
-    private int likesInfo;
+    private CommentsInfo likesInfo;
 
     public int getId() {
         return id;
@@ -39,12 +39,11 @@ public class CommentsInfo {
         this.text = text;
     }
 
-    public int getLikesInfo() {
+    public CommentsInfo getLikesInfo() {
         return likesInfo;
     }
 
-    public void setLikesInfo(int likesInfo) {
+    public void setLikesInfo(CommentsInfo likesInfo) {
         this.likesInfo = likesInfo;
     }
-
 }
