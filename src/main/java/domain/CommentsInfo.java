@@ -1,6 +1,14 @@
 package domain;
 
 public class CommentsInfo {
+
+    private int id;
+    private int text;
+    private boolean canPost;
+    private String date;
+    private int likesNumber;
+    private UsersInfo usersInfo;
+
     public int getId() {
         return id;
     }
@@ -49,10 +57,5 @@ public class CommentsInfo {
         this.usersInfo = usersInfo;
     }
 
-    private int id;
-    private int text;
-    private boolean canPost;
-    private String date;
-    private int likesNumber;
-    private UsersInfo usersInfo;
+
 }

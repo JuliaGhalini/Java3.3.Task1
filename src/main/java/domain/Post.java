@@ -2,6 +2,26 @@ package domain;
 
 public class Post {
 
+    private int id;
+    private int ownerId;
+    private int fromId;
+    private int date;
+    private String text;
+    private int signerId;
+    private int createdBy;
+    private LikesInfo likesInfo;
+    private CommentsInfo commentsInfo;
+    private RepostsInfo repostsInfo;
+    private int replyOwnerId;
+    private int replyPostId;
+    private int  friendsOnly;
+    private String copyright;
+    private boolean canPin;
+    private int isPinned;
+    private boolean isFavorite;
+    private boolean canDelete;
+    private boolean canEdit;
+
     public int getId() {
         return id;
     }
@@ -153,25 +173,5 @@ public class Post {
     public void setCanEdit(boolean canEdit) {
         this.canEdit = canEdit;
     }
-
-    private int id;
-    private int ownerId;
-    private int fromId;
-    private int date;
-    private String text;
-    private int signerId;
-    private int createdBy;
-    private LikesInfo likesInfo;
-    private CommentsInfo commentsInfo;
-    private RepostsInfo repostsInfo;
-    private int replyOwnerId;
-    private int replyPostId;
-    private int  friendsOnly;
-    private String copyright;
-    private boolean canPin;
-    private int isPinned;
-    private boolean isFavorite;
-    private boolean canDelete;
-    private boolean canEdit;
 }
 
