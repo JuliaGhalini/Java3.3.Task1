@@ -65,11 +65,11 @@ public class Post {
         this.likesInfo = likesInfo;
     }
 
-    public СommentsInfo getCommentsInfo() {
+    public CommentsInfo getCommentsInfo() {
         return commentsInfo;
     }
 
-    public void setCommentsInfo(СommentsInfo commentsInfo) {
+    public void setCommentsInfo(CommentsInfo commentsInfo) {
         this.commentsInfo = commentsInfo;
     }
 
@@ -161,7 +161,7 @@ public class Post {
     private int signerId;
     private int createdBy;
     private LikesInfo likesInfo;
-    private СommentsInfo commentsInfo;
+    private CommentsInfo commentsInfo;
     private RepostsInfo repostsInfo;
     private int replyOwnerId;
     private int replyPostId;
