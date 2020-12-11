@@ -1,6 +1,7 @@
 package domain;
 
 public class Post {
+
     public int getId() {
         return id;
     }
