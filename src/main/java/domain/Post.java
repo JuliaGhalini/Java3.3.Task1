@@ -1,26 +1,6 @@
 package domain;
 
 public class Post {
-    private int id;
-    private int ownerId;
-    private int fromId;
-    private int date;
-    private String text;
-    private int signerId;
-    private int createdBy;
-    private Post likesInfo;
-    private Post commentsInfo;
-    private Post repostsInfo;
-    private int replyOwnerId;
-    private int replyPostId;
-    private int  friendsOnly;
-    private String copyright;
-    private boolean canPin;
-    private int isPinned;
-    private boolean isFavorite;
-    private boolean canDelete;
-    private boolean canEdit;
-
     public int getId() {
         return id;
     }
@@ -77,27 +57,27 @@ public class Post {
         this.createdBy = createdBy;
     }
 
-    public Post getLikesInfo() {
+    public LikesInfo getLikesInfo() {
         return likesInfo;
     }
 
-    public void setLikesInfo(Post likesInfo) {
+    public void setLikesInfo(LikesInfo likesInfo) {
         this.likesInfo = likesInfo;
     }
 
-    public Post getCommentsInfo() {
+    public СommentsInfo getCommentsInfo() {
         return commentsInfo;
     }
 
-    public void setCommentsInfo(Post commentsInfo) {
+    public void setCommentsInfo(СommentsInfo commentsInfo) {
         this.commentsInfo = commentsInfo;
     }
 
-    public Post getRepostsInfo() {
+    public RepostsInfo getRepostsInfo() {
         return repostsInfo;
     }
 
-    public void setRepostsInfo(Post repostsInfo) {
+    public void setRepostsInfo(RepostsInfo repostsInfo) {
         this.repostsInfo = repostsInfo;
     }
 
@@ -173,7 +153,24 @@ public class Post {
         this.canEdit = canEdit;
     }
 
-
-
-
+    private int id;
+    private int ownerId;
+    private int fromId;
+    private int date;
+    private String text;
+    private int signerId;
+    private int createdBy;
+    private LikesInfo likesInfo;
+    private СommentsInfo commentsInfo;
+    private RepostsInfo repostsInfo;
+    private int replyOwnerId;
+    private int replyPostId;
+    private int  friendsOnly;
+    private String copyright;
+    private boolean canPin;
+    private int isPinned;
+    private boolean isFavorite;
+    private boolean canDelete;
+    private boolean canEdit;
 }
+
